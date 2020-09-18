@@ -1,16 +1,17 @@
 # libguestfs-ubuntu20
-ubuntu20 image for libguestfs
+* ubuntu20 image for libguestfs
 
 Uses
+<pre>
 [ubuntu20]
 uri=http://mirror.trouble-free.net/libguestfs/index.asc
 gpgkey=file:///etc/xdg/virt-builder/repos.d/ubuntu20.gpg
-
+</pre>
 
 copy ubuntu20.gpg and ubuntu-20.conf to /etc/xdg/virt-builder/repos.d/
 
 
-build your image
+* build your image
 <pre>
 virt-builder ubuntu-20.04 --root-password password:interser123 --update --hostname ubuntu-20.is.cc --format qcow2 -o ubuntu-20.qcow2
 [   2.2] Downloading: http://mirror.trouble-free.net/libguestfs/ubuntu-20-04.img.xz
@@ -33,14 +34,14 @@ virt-builder: warning: random seed could not be set for this type of guest
 </pre>
 
 
-As always
+* As always
 IMPORTANT WARNING:
- It seems to be impossible to create an Ubuntu >= 14.04 image using
- preseed without creating a user account.  Therefore this image
- contains a user account 'builder'.  I have disabled it, so that
- people who don't read release notes don't get caught out, but you
- might still wish to delete it completely.
+It seems to be impossible to create an Ubuntu >= 14.04 image using
+preseed without creating a user account.  Therefore this image
+contains a user account 'builder'.  I have disabled it, so that
+people who don't read release notes don't get caught out, but you
+might still wish to delete it completely.
  
- This image does not contain SSH host keys.  To regenerate them use:
+This image does not contain SSH host keys.  To regenerate them use:
  
-     --firstboot-command "dpkg-reconfigure openssh-server"
+ --firstboot-command "dpkg-reconfigure openssh-server"
