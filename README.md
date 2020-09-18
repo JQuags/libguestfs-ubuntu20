@@ -11,6 +11,7 @@ copy ubuntu20.gpg and ubuntu-20.conf to /etc/xdg/virt-builder/repos.d/
 
 
 build your image
+<pre>
 virt-builder ubuntu-20.04 --root-password password:interser123 --update --hostname ubuntu-20.is.cc --format qcow2 -o ubuntu-20.qcow2
 [   2.2] Downloading: http://mirror.trouble-free.net/libguestfs/ubuntu-20-04.img.xz
 ##################################################################################################################################################################### 100.0%
@@ -29,7 +30,7 @@ virt-builder: warning: random seed could not be set for this type of guest
                  Output format: qcow2
             Total usable space: 5.8G
                     Free space: 4.0G (68%)
-
+</pre>
 
 
 As always
