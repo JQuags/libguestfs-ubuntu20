@@ -1,12 +1,11 @@
 [ubuntu-20.04]
 name=Ubuntu 20.04.1 LTS
 osinfo=ubuntu-20.04
-file=ubuntu-20-04.img.xz
+file=ubuntu-20.04.img.xz
 arch=x86_64
-checksum[sha512]=11f57ca2b4458ca01bd51af560911b8c8f4757367985d3e792c1bef83f53bd11dfc5af88b569a167485784fd04f39e462154fda02424ac0fa675836566e14df7
+checksum[sha512]=3a56226bbf7e67fd7f950bbc171d5567279aa35dc617f46027ddf107a89ec3f6ae9f57442eb41fc8bd03e1c8d4dbd5fd4fbf2e165f5282bb0dd6f99406a9d124
 revision=1
 format=raw
 size=6442450944
-compressed_size=740106480
-expand=/dev/sda5
-
+compressed_size=762595244
+expand=/dev/sda1
