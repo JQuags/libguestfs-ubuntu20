@@ -1,5 +1,6 @@
 # libguestfs-ubuntu20
 * ubuntu20 image for libguestfs
+* also freebsd 12.1
 
 Uses
 <pre>

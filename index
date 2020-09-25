@@ -9,3 +9,16 @@ format=raw
 size=6442450944
 compressed_size=762595244
 expand=/dev/sda1
+
+[freebsd-12.1]
+name=FreeBSD12
+osinfo=FreeBSD 12.1
+file=freebsd-12.1.img.xz
+arch=x86_64
+checksum[sha512]=de7b0dce1eb7a1fd294e0bd143d6a8fc22c4df90345ced44fd8bc083274a8928f3d2222cffdac39353f8db6b38af6f1b872075d07002ef14769da75e3b2f59cd
+revision=1
+format=raw
+size=6442450944
+compressed_size=687422120
+expand=/dev/sda2
+
